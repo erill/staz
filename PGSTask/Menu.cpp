@@ -54,8 +54,6 @@ void Menu::userMenu()
 						delete rectangle;
 						rectangle = NULL;
 						rectangle = new Rectangle(a2, b2);
-					//	r->setA(a2);
-					//	r->setB(b2);
 						cout << "Area of the figure: " << rectangle->countFigureArea() << "\n";
 						cout << "Perimeter of the figure: " << rectangle->countFigurePerimeter() << "\n\n";
 						system("pause");
@@ -93,7 +91,7 @@ void Menu::userMenu()
 					}
 					else
 					{
-						if (a2 > (b2 + c2) || b2 > (a2 + c2) || c2 > (a2 + b2))
+						if (a2 >= (b2 + c2) || b2 >= (a2 + c2) || c2 >= (a2 + b2))
 						{
 							cout << "Unfulfilled triangle inequality. \nThe sides must meet the following conditions: \n";
 							cout << "a + b > c\n";
@@ -107,9 +105,6 @@ void Menu::userMenu()
 							delete triangle;
 							triangle = NULL;
 							triangle = new Triangle(a2, b2, c2);
-							//t->setA(a2);
-							//t->setB(b2);
-							//t->setC(c2);
 							cout << "Area of the figure: " << triangle->countFigureArea() << "\n";
 							cout << "Perimeter of the figure: " << triangle->countFigurePerimeter() << "\n\n";
 							system("pause");

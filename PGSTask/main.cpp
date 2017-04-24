@@ -1,5 +1,5 @@
-// PGSTask.cpp : Defines the entry point for the console application.
-//
+// PGSTask.cpp 
+// Created by Magdalena Zielonka
 
 #include "stdafx.h"
 #include "Menu.h"
